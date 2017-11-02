@@ -4,79 +4,153 @@
 	<meta charser="uft-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Menu</title>
+	
 	<style>
-	* {
-	box-sizing: border-box; 
-	margin:0;
-	padding:0;
+	
+	
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
 }
+
 h1 { color: rgb(0, 0, 0);
-	font-size: 60px;
+	font-size: 30px;
 	text-align: center;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
- }
-
- h2 {}
-.row {
+	margin: 5%;
+} 
+ 
+ 
+.row { 
 	width: 100%;
 }
-@media (min-width: 992px) {
-	.col-lg-1 {
-		float: left;
-		border: 1px solid black;
-	}
 
-.col-lg-1 {
-	width: 33.33%;
+
+
+@media only screen and (min-width: 992px) {
+	.col-lg-1 {
+		width: 33.33%;
+		float: left;
+		
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1 {
-		float:left;
-		border: 1px solid black;
-	}
-	.col-md-1 {
-		width: 50%;
-
+    	width: 50%;
+    	float: left;
     }
+}
 
-    #container1 #container2 #container3{
-    	background-color: rgb(153, 153, 153);
-    	position: relative;
-    	
-    }
-#t1 { background-color: rgb(255, 128, 0);
-	position: absolute;
-	top: ;
 
+
+#div1 {
+	border: 8px solid white;
+}
+
+
+#div2 {
+	border: 8px solid white;
+}
+
+#div3 {
+	border: 8px solid white;
+}
+
+#box1 { 
+    border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	background-color: rgb(102, 153, 140);
+	position: relative;
+}
+#box2 { border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	background-color: rgb(102, 153, 140);
+	position: relative;
+}
+#box3 { border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	background-color: rgb(102, 153, 140);
+	position: relative;
+}
+
+#t1 { background-color: pink;
+	width: 100px;
+	height: 20px;
+	position: relative;
+	text-align: center;
+	left: 339.609px;
+	
 }
 
 #t2 {
-
+	background-color: red;
+	width: 100px;
+	height: 20px;
+	position: relative;
+	text-align: center;
+	left: 339.609px;
+	
 }
 
 #t3 {
+	background-color: blue;
+	width: 100px;
+	height: 20px;
+	position: relative;
+	text-align: center;
+	left: 339.609px;
+	
+}
+    
+#p1 {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: rgb(102, 153, 140);
+	text-align: center;
+	
+}
 
+#p2 {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: rgb(102, 153, 140);
+	text-align: center;
+}
+
+#p3 {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: rgb(102, 153, 140);
+	text-align: center;
 }
 
     </style>
 </head>
 <body>
 <h1>Our Menu</h1>
-<div class= "row">
-	<div id="container1" class="col-lg-1 col-md-1">
-		<h2 id="t1">Chicken</h2>
-		<p> lorem ipsum dolor amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+	<div class="row">
+	<div id="div1" class="col-lg-1 col-md-1">
+		<div id="box1"><p id="t1">Chicken</p></div>
+		<p id="p1"> lorem ipsum dolor amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
 	</div>
-	<div id="container2" class="col-lg-1 col-md-1">
-		<h2 id="t2">Beef</h2>
-		<p>lorem ipsum dolor amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+	<div id="div2" class="col-lg-1 col-md-1">
+		<div id="box2"><p id="t2">Beef</p></div>
+		<p id="p2">lorem ipsum dolor amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
 	</div>
-	<div id="container3" class="col-lg-1 col-md-1">
-		<h2 id="t3">Sushi</h2>
-		<p>lorem ipsum dolor amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+	<div id="div3" class="col-lg-1 col-md-1">
+		<div id="box3"><p id="t3">Sushi</p></div>
+		<p id="p3">lorem ipsum dolor amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim as minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
 	</div>
-	</div>
-
+</div>
 </body>
 </html>
